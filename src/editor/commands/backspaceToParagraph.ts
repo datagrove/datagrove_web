@@ -1,5 +1,13 @@
-export default function backspaceToParagraph(type) {
-  return (state, dispatch) => {
+import { NodeType } from "prosemirror-model";
+import { EditorState } from "prosemirror-state";
+
+export default function backspaceToParagraph(type: NodeType) {
+  return (state: EditorState, dispatch: Function) => {
+    
+    console.log("state: ", state);
+    console.log("type: ", type);
+    console.log("dispatch: ", dispatch);
+
     const { $from, from, to, empty } = state.selection;
 
     // if the selection has anything in it then use standard delete behavior

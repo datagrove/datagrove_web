@@ -5,7 +5,7 @@ import { ToastType } from "../types";
 function findPlaceholderLink(doc, href) {
   let result;
 
-  function findLinks(node, pos = 0) {
+  function findLinks(node, pos: number = 0) {
     // get text nodes
     if (node.type.name === "text") {
       // get marks for text nodes
