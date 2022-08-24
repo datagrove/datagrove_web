@@ -3,10 +3,6 @@ import { EditorState } from "prosemirror-state";
 
 export default function backspaceToParagraph(type: NodeType) {
   return (state: EditorState, dispatch: Function) => {
-    
-    console.log("state: ", state);
-    console.log("type: ", type);
-    console.log("dispatch: ", dispatch);
 
     const { $from, from, to, empty } = state.selection;
 
