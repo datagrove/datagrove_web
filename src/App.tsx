@@ -39,7 +39,7 @@ function App() {
     <div className="grow"/>
     <EditMenu menu={mainMenu}  />
   </div>
-      <Editor className='editor prose' defaultValue="" placeholder="..."  autoFocus/>
+      <Editor className='editor prose max-w-none' defaultValue="" placeholder="..."  autoFocus/>
       </div>)
 }
 
