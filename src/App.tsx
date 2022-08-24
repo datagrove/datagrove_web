@@ -34,12 +34,14 @@ function App() {
   return (
     <div style={{height: '100%'}}>
     <div className="appBar flex">
-    <button><ChevronLeftIcon className='h-6 w-6 mr-2'/></button>
+    <button onClick={store.done}><ChevronLeftIcon className='h-6 w-6 mr-2'/></button>
     <div>{ title}</div>
     <div className="grow"/>
     <EditMenu menu={mainMenu}  />
   </div>
-      <Editor className='editor prose max-w-none' defaultValue="" placeholder="..."  autoFocus/>
+      <Editor className='editor prose max-w-none' 
+        defaultValue={store.editorValue} 
+        placeholder="..."  autoFocus/>
       </div>)
 }
 
