@@ -4,7 +4,7 @@ import { makeAutoObservable } from "mobx"
 import { observer } from "mobx-react"
 import { MarkdownSerializer } from '../editor/lib/markdown/serializer'
 
-export const webview = (window as any).chrome.webview
+export const webview = (window as any)?.chrome?.webview
 
 class AppState {
   view: EditorView | undefined
