@@ -5,4 +5,4 @@ npm run dev
 
 publish:
 npm run build
-wrangler pages publish dist
+npx wrangler pages publish dist
