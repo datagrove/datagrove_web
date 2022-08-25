@@ -17,7 +17,7 @@ class AppState {
 
     if (webview) {
       webview.addEventListener('message', (x: MessageEvent) => {
-        let [a, b] = x.data.split("\n")
+        let [a, b] = x.data.split("!~~!")
         this.label = a ? a : "Untitled"
         this.editorValue = b
         console.log(x, a, b)
